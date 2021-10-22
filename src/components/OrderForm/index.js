@@ -63,7 +63,6 @@ const OrderForm = () => {
     } catch (error) {
       let { data } = error.response.data;
       let fitas = Object.entries(data);
-      console.log("fitas = ", fitas);
       fitas.forEach( fita => {
         notifyError(getError(fita[0]));
       })

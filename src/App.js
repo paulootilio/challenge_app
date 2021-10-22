@@ -7,10 +7,12 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <ToastContainer />
-        <OrderForm />
       </header>
+      <body className="App-header">
+        <OrderForm />
+      </body>
     </div>
   );
 }
